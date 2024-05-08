@@ -216,6 +216,33 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     360: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+  },
+});
+const swiper2 = new Swiper(".swiper2", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 1000,
+  },
+  breakpoints: {
+    360: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
