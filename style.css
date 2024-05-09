@@ -198,7 +198,7 @@ ul {
     align-items: center;
     gap: 5px; }
     .crypto_item .crypto_item-content .crypto__content-price {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700; }
     .crypto_item .crypto_item-content .crypto__content-percent {
       font-size: 16px; }
@@ -435,7 +435,7 @@ section.title {
           animation: appear 2s infinite; }
     section.title .container .title_right {
       width: 50%;
-      border: 1px solid var(--btn-color);
+      border: 1px solid #05678d;
       border-radius: 5px;
       padding: 25px; }
       section.title .container .title_right form {
@@ -486,8 +486,8 @@ section.title {
           border: 0;
           padding: 0;
           border-radius: 0;
-          border-right: 1px solid #ffffff;
-          border-left: 1px solid #ffffff;
+          border-right: 1px solid var(--main-color);
+          border-left: 1px solid var(--main-color);
           border-collapse: collapse; }
           section.title .container .title_bottom .swiper_title .crypto_item .crypto_item-title {
             display: flex;
@@ -497,7 +497,7 @@ section.title {
               gap: 10px;
               align-items: center; }
             section.title .container .title_bottom .swiper_title .crypto_item .crypto_item-title .crypto__title-right {
-              background-color: #e5e5e5c6;
+              background-color: var(--main-color);
               padding: 5px 10px;
               border-radius: 25px; }
             section.title .container .title_bottom .swiper_title .crypto_item .crypto_item-title .crypto__content-percent {
@@ -515,6 +515,11 @@ section.info {
     display: flex;
     flex-direction: column;
     gap: 20px; }
+    section.info .container img {
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
     section.info .container h2,
     section.info .container p {
       color: var(--bg-color); }
@@ -527,7 +532,7 @@ section.conclusion {
     flex-direction: column;
     gap: 10px;
     transform: var(--translate-plus);
-    transition: 0.8s ease all;
+    transition: 0.3s ease all;
     opacity: 0; }
     section.conclusion .container.active {
       opacity: 1;
@@ -549,7 +554,7 @@ section.advantages {
       grid-column-gap: 10px;
       grid-row-gap: 10px;
       transform: var(--translate-plus);
-      transition: 0.8s ease all;
+      transition: 0.3s ease all;
       opacity: 0; }
       section.advantages .container .advantages_right.active {
         opacity: 1;
@@ -596,7 +601,7 @@ section.about {
       section.about .container .about_bottom h2 {
         text-align: center;
         transform: var(--translate-plus);
-        transition: 0.8s ease all;
+        transition: 0.3s ease all;
         opacity: 0; }
         section.about .container .about_bottom h2.active {
           opacity: 1;
@@ -606,7 +611,7 @@ section.about {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: translateY(-30%);
         opacity: 0; }
         section.about .container .about_bottom .about_bottom-top.active {
@@ -626,7 +631,7 @@ section.about {
         gap: 30px;
         flex-direction: column;
         align-items: center;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: translateY(30%);
         opacity: 0; }
         section.about .container .about_bottom .about_bottom-bottom.active {
@@ -719,7 +724,7 @@ section.decoding {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      transition: 0.8s all;
+      transition: 0.3s all;
       transform: var(--translate-plus);
       opacity: 0; }
       section.decoding .container .decoding_top.active {
@@ -746,7 +751,7 @@ section.elevating {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transition: 0.8s all;
+    transition: 0.3s all;
     transform: translateY(30%);
     opacity: 0; }
     section.elevating .container.active {
@@ -809,7 +814,7 @@ section.growth {
   section.growth .container {
     display: flex;
     gap: 10px;
-    transition: 0.8s all;
+    transition: 0.3s all;
     transform: translateY(30%);
     opacity: 0; }
     section.growth .container.active {
@@ -904,7 +909,7 @@ section.future {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: var(--translate-minus);
         opacity: 0; }
         section.future .container .future_top .future_top-left.active {
@@ -934,7 +939,7 @@ section.future {
       section.future .container .future_top .future_top-right {
         width: 50%;
         max-height: 550px;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: var(--translate-plus);
         opacity: 0; }
         section.future .container .future_top .future_top-right.active {
@@ -948,7 +953,7 @@ section.future {
       display: flex; }
       section.future .container .future_bottom .future_bottom-left {
         width: 50%;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: var(--translate-minus);
         opacity: 0; }
         section.future .container .future_bottom .future_bottom-left.active {
@@ -963,7 +968,7 @@ section.future {
         display: flex;
         gap: 20px;
         flex-direction: column;
-        transition: 0.8s all;
+        transition: 0.3s all;
         transform: var(--translate-plus);
         opacity: 0; }
         section.future .container .future_bottom .future_bottom-right.active {
@@ -1022,7 +1027,7 @@ section.facts {
           align-self: flex-start;
           opacity: 0;
           transform: translateY(-30%);
-          transition: 0.8s all; }
+          transition: 0.3s all; }
           section.facts .container .facts_bottom article:nth-child(1) span,
           section.facts .container .facts_bottom article:nth-child(1) h3 {
             color: #000000; }
@@ -1033,7 +1038,7 @@ section.facts {
           background-color: #000000;
           opacity: 0;
           transform: translateY(30%);
-          transition: 0.8s all;
+          transition: 0.3s all;
           align-self: center; }
           section.facts .container .facts_bottom article:nth-child(2).active {
             opacity: 1;
@@ -1043,7 +1048,7 @@ section.facts {
           align-self: flex-start;
           opacity: 0;
           transform: translateY(-30%);
-          transition: 0.8s all; }
+          transition: 0.3s all; }
           section.facts .container .facts_bottom article:nth-child(3).active {
             opacity: 1;
             transform: translateY(0); }
@@ -1052,7 +1057,7 @@ section.facts {
           background-color: var(--btn-color);
           opacity: 0;
           transform: translateY(30%);
-          transition: 0.8s all; }
+          transition: 0.3s all; }
           section.facts .container .facts_bottom article:nth-child(4).active {
             opacity: 1;
             transform: translateY(0); }
@@ -1074,7 +1079,7 @@ section.why {
       gap: 10px;
       opacity: 0;
       transform: translateY(-30%);
-      transition: 0.8s all; }
+      transition: 0.3s all; }
       section.why .container .why_top.active {
         opacity: 1;
         transform: translateY(0); }
@@ -1113,7 +1118,7 @@ section.choice {
       justify-content: center;
       align-items: center;
       gap: 10px;
-      transition: 0.8s all;
+      transition: 0.3s all;
       opacity: 0;
       transform: translateY(-30%); }
       section.choice .container .choice_top.active {
@@ -1322,10 +1327,10 @@ footer {
       text-align: center;
       max-width: 450px; }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1690px) {
   :root {
-    --translate-minus: translateX(-80%);
-    --translate-plus: translateX(80%); } }
+    --translate-minus: translateX(-70%);
+    --translate-plus: translateX(70%); } }
 
 @media screen and (max-width: 1000px) {
   :root {
@@ -1462,6 +1467,8 @@ footer {
       display: none; } }
 
 @media screen and (max-width: 550px) {
+  section.title .container .title_left-anim {
+    display: none; }
   section.advantages .container p {
     font-size: 12px; }
   section.growth .container p,
